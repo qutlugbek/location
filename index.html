@@ -1,18 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Onlayn Do'kon</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    
 
+<body class="bg-gray-100 text-gray-800">
 
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold mb-4 md:mb-0">Onlayn Do'kon</h1>
+            <nav>
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                    <li><a href="#home" class="hover:text-gray-300">Bosh Sahifa</a></li>
+                    <li><a href="#products" class="hover:text-gray-300">Mahsulotlar</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Aloqa</a></li>
+                    <li><a href="#cart" class="hover:text-gray-300">Savatcha</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="w-full h-64 bg-cover bg-center flex items-center justify-center text-3xl font-bold text-white text-center p-4"
+        style="background-image: url('banner.jpg');">
+        Maxsus chegirmalar va yangi mahsulotlar!
+    </div>
+
+    <!-- Mahsulotlar Katalogi -->
+    <section id="products" class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold mb-6 text-center">Mahsulotlarimiz</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://i.pinimg.com/originals/de/bb/e2/debbe2aa50b35207841beb8158cb0078.jpg" alt="Mahsulot 1"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Mahsulot Nomi 1</h3>
+                    <p class="text-gray-700 mb-4">Narxi: $50</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://i.ytimg.com/vi/CsjpFtxxku0/maxresdefault.jpg" alt="Mahsulot 2"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Mahsulot Nomi 2</h3>
+                    <p class="text-gray-700 mb-4">Narxi: $75</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://mobilworld.by/upload/medialibrary/b06/b06727d3f4fe624f0ad0fbbfca73bed0.jpg"
+                    alt="Mahsulot 3" class="w-full h-50 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Mahsulot Nomi 3</h3>
+                    <p class="text-gray-700 mb-4">Narxi: $60</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Savatchaga
+                        qo'shish</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aloqa Bo'limi -->
+    <section id="contact" class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold mb-6 text-center">Aloqa</h2>
+        <p class="text-center text-gray-700">Biz bilan bog'laning: <a href="https://github.com/qutlugbek"
+                class="text-blue-500">qutlugbek@onlaynshop.uz</a></p>
+        <p class="text-center text-gray-700">Telefon: +998946150908</p>
+    </section>
+
+    <!-- Savatcha Bo'limi -->
+    <section id="cart" class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold mb-6 text-center">Savatcha</h2>
+        <p class="text-center text-gray-700">Sizning savatchangiz hozircha bo'sh.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Onlayn Do'kon. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
 
 
 
     <script src="./main.js"></script>
 </body>
+
 </html>
